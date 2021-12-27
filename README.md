@@ -13,7 +13,7 @@ Welcome to group 56's repository. Our project is to create an Instagram-esque we
 7. Done! Enjoy the website!
 
 ## How to run things (via Heroku with me)
-1.  Simply go to `catsallian.herokuapp.com` when the server is on and enjoy :) 
+1.  Simply go to `catsallian.herokuapp.com` when the server is on and enjoy :) `note: website has been deactivated as of 2021`
  
 ## How to run things (via Heroku manually)
 1. Make sure the website's properties are properly setup before deployment
