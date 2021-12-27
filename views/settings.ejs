@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s e t t i n g s</title>
+    <link rel='stylesheet' href='/css/settings.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class='wrapper'>
+        <div class='image-grid'>
+            <div class='image-grid-col'>
+                <img class='background-image' src='/images/catdatabase/catpic1.png'>
+                <img class='background-image' src='/images/catdatabase/catpic2.png'>
+                <img class='background-image' src='/images/catdatabase/catpic3.png'>
+                <img class='background-image' src='/images/catdatabase/catpic4.png'>
+                <img class='background-image' src='/images/catdatabase/catpic5.png'>
+                <img class='background-image' src='/images/catdatabase/catpic6.png'>
+                <img class='background-image' src='/images/catdatabase/catpic7.png'>
+                <img class='background-image' src='/images/catdatabase/catpic8.png'>
+                <img class='background-image' src='/images/catdatabase/catpic9.png'>
+            </div>
+            <div class='image-grid-col'>
+                <img class='background-image' src='/images/catdatabase/catpic10.png'>
+                <img class='background-image' src='/images/catdatabase/catpic11.png'>
+                <img class='background-image' src='/images/catdatabase/catpic12.png'>
+                <img class='background-image' src='/images/catdatabase/catpic13.png'>
+                <img class='background-image' src='/images/catdatabase/catpic14.png'>
+                <img class='background-image' src='/images/catdatabase/catpic15.png'>
+                <img class='background-image' src='/images/catdatabase/catpic16.png'>
+                <img class='background-image' src='/images/catdatabase/catpic17.png'>
+                <img class='background-image' src='/images/catdatabase/catpic18.png'>
+            </div>
+            <div class='image-grid-col'>
+                <img class='background-image' src='/images/catdatabase/catpic19.png'>
+                <img class='background-image' src='/images/catdatabase/catpic20.png'>
+                <img class='background-image' src='/images/catdatabase/catpic21.png'>
+                <img class='background-image' src='/images/catdatabase/catpic22.png'>
+                <img class='background-image' src='/images/catdatabase/catpic23.png'>
+                <img class='background-image' src='/images/catdatabase/catpic24.png'>
+                <img class='background-image' src='/images/catdatabase/catpic25.png'>
+                <img class='background-image' src='/images/catdatabase/catpic26.png'>
+                <img class='background-image' src='/images/catdatabase/catpic27.png'>
+            </div>
+            <div class='image-grid-col'>
+                <img class='background-image' src='/images/catdatabase/catpic28.png'>
+                <img class='background-image' src='/images/catdatabase/catpic29.png'>
+                <img class='background-image' src='/images/catdatabase/catpic30.png'>
+                <img class='background-image' src='/images/catdatabase/catpic31.png'>
+                <img class='background-image' src='/images/catdatabase/catpic32.png'>
+                <img class='background-image' src='/images/catdatabase/catpic33.png'>
+                <img class='background-image' src='/images/catdatabase/catpic34.png'>
+                <img class='background-image' src='/images/catdatabase/catpic35.png'>
+                <img class='background-image' src='/images/catdatabase/catpic36.png'>
+            </div>
+        </div>
+            
+        <div class='leftside'>
+
+            <div class='upperhalf'>
+                <span class='title'>
+                    <img class='settings-profile-pic' src='https://drive.google.com/uc?id=<%=user.profileimg%>&export=download'>
+                    <span class='my-settings' id='<%=user.userid%>'>my settings</span>
+                </span>
+                <div class='loginform'>
+                    <label for='username'>username</label>
+                    <input id='username' class='text-input' name='username' placeholder='<%= user.username %>' type='text'>
+                    
+                    <label for='email'>email</label>
+                    <input id='email' class='text-input' name='email' placeholder='<%= user.email %>' type='email'>
+
+                    <label for='password'>password</label>
+                    <input id='password' class='text-input' name='password' placeholder='password' type='password'>
+
+                    <label for='bio'>bio</label>
+                    <input id='bio' class='text-input' name='bio' placeholder='<%= user.bio %>' type='text'>
+
+                    <label for='profilepic'>profile image</label>
+                    <input id='profilepic' class='profile-pic-upload' name='profilepic' type='file'>
+                </div>
+            </div>
+
+            <div class='lowerhalf'>
+                <span>
+                <input type="submit" class='update-account-button' form="myform" value='save changes'>
+                <input type="submit" class='update-cancel-button' value='cancel'>
+                <input type="submit" class='logout-button' value='logout'>
+                <input type="submit" class='update-delete-button' form="myform" value='delete account'>
+                </span>
+            </div>
+            
+            
+        </div>
+
+
+    </div>
+
+
+<%- include('./partials/footer.ejs') %>
+</body>
+</html>

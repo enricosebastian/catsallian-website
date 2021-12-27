@@ -1,0 +1,2 @@
+# Public folder
+This folder contains all the static images to offload any heavy uploading tasks. It also contains the styles used by each webpage as well as the javascript to make it functional and sleek!
